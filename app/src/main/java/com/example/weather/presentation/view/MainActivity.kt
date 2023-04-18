@@ -1,8 +1,7 @@
-package com.example.weather.presentation.ui
+package com.example.weather.presentation.view
 
 import android.os.Build
 import android.os.Bundle
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
@@ -20,10 +19,6 @@ import com.example.weather.util.extention.hide
 import com.example.weather.util.extention.show
 import com.example.weather.util.extention.toCelsius
 import com.example.weather.util.extention.toPercent
-import convertDateFormat
-import spleitDateTime
-import java.time.LocalDateTime
-import java.time.ZoneOffset
 import java.util.*
 
 @RequiresApi(Build.VERSION_CODES.O)
