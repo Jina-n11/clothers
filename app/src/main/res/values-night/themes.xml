@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Weather" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="background">@color/background</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/background</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

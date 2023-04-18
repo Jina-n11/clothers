@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">weather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pressure_value">%1d%</string>
+    <string name="max_min_temperature_value">%2s% _ْ / _ْ</string>
+    <string name="pressure">Pressure</string>
+</resources>
