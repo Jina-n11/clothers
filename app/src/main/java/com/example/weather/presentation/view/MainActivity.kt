@@ -10,15 +10,15 @@ import com.example.weather.data.fake_data.ClothesSuggester
 import com.example.weather.data.util.Status
 import com.example.weather.databinding.ActivityMainBinding
 import com.example.weather.domain.model.MainWeather
-import com.example.weather.domain.model.WeatherState
+import com.example.weather.presentation.util.WeatherState
 import com.example.weather.presentation.presenter.clothes_suggester.ClothesSuggesterPresenter
 import com.example.weather.presentation.presenter.clothes_suggester.ClothesSuggesterView
 import com.example.weather.presentation.presenter.weather.WeatherPresenter
 import com.example.weather.presentation.presenter.weather.WeatherView
-import com.example.weather.util.extention.hide
-import com.example.weather.util.extention.show
-import com.example.weather.util.extention.toCelsius
-import com.example.weather.util.extention.toPercent
+import com.example.weather.presentation.util.extention.hide
+import com.example.weather.presentation.util.extention.show
+import com.example.weather.presentation.util.extention.toCelsius
+import com.example.weather.presentation.util.extention.toPercent
 import java.util.*
 
 @RequiresApi(Build.VERSION_CODES.O)

@@ -20,17 +20,3 @@ data class City(
     @SerializedName("sunset") 
     val sunset: Long,
 )
-
-//"city": {
-//    "id": 5688025,
-//    "name": "Bismarck",
-//    "coord": {
-//        "lat": 46.8083,
-//        "lon": -100.7837
-//    },
-//    "country": "US",
-//    "population": 61272,
-//    "timezone": -18000,
-//    "sunrise": 1680955737,
-//    "sunset": 1681003239
-//}

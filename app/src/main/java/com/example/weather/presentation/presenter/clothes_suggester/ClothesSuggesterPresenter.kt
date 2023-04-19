@@ -7,7 +7,7 @@ import com.example.weather.data.fake_data.ClothesList
 import com.example.weather.data.fake_data.ClothesSuggester
 import com.example.weather.data.local.WeatherSharedPreferences
 import com.example.weather.domain.model.MainWeather
-import com.example.weather.util.extention.toCelsius
+import com.example.weather.presentation.util.extention.toCelsius
 import spleitDateTime
 import java.time.LocalDateTime
 

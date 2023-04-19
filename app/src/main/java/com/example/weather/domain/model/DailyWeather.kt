@@ -22,14 +22,3 @@ data class DailyWeather(
     @SerializedName("dt_txt")
     val dtTxt: String,
 )
-
-//"dt": 1680944400,
-//"main": { },
-//"weather": [],
-//"clouds": {},
-//"wind": {},
-//"visibility": 10000,
-//"pop": 0,
-//"sys": {},
-//"dt_txt": "2023-04-08 09:00:00"
-

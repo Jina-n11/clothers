@@ -1,4 +1,4 @@
-package com.example.weather.domain.model
+package com.example.weather.presentation.util
 
 enum class WeatherState {
     CLOUDS,

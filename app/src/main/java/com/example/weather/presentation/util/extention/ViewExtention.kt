@@ -1,4 +1,4 @@
-package com.example.weather.util.extention
+package com.example.weather.presentation.util.extention
 
 import android.os.Build
 import android.view.View

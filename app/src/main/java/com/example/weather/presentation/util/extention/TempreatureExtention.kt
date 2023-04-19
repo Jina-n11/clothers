@@ -1,4 +1,4 @@
-package com.example.weather.util.extention
+package com.example.weather.presentation.util.extention
 
 fun Double.toCelsius () : Double {
     return String.format("%.2f", (this - 273.15)).toDouble()
