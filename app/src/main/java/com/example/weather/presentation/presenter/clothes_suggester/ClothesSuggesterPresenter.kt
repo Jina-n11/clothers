@@ -26,7 +26,7 @@ class ClothesSuggesterPresenter(
     fun checkClothesSuggester(data: MainWeather) {
         val clothesList = ClothesList().getList()
 
-        if (getDay() != LocalDateTime.now().dayOfWeek.toString()) {
+        if (getDay() == LocalDateTime.now().dayOfWeek.toString()) {
             val clothesSuggester = getClothesSuggesterIsWear(clothesList = clothesList, id= getIdImage())
             view.getClothesSuggester(clothesSuggester)
 
@@ -54,7 +54,7 @@ class ClothesSuggesterPresenter(
     }
 
     private fun setupDay() {
-        preferences.day = LocalDateTime.now().plusDays(1).dayOfWeek.toString()
+        preferences.day = LocalDateTime.now().dayOfWeek.toString()
     }
 
 
