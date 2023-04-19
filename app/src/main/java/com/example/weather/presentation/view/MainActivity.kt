@@ -41,17 +41,8 @@ class MainActivity : AppCompatActivity(), WeatherView, ClothesSuggesterView {
         }.start()
     }
 
-    override fun onState(status: Status<MainWeather>) {
-        when (status) {
-            is Status.Loading -> onLoading()
-            is Status.Success -> onSuccess(status.data)
-            else -> {
-                onFailure()
-            }
-        }
-    }
 
-    private fun onSuccess(data: MainWeather) {
+    override fun onSuccess(data: MainWeather) {
         runOnUiThread {
             binding.viewBackground.hide()
             presenterWeather.getWeatherInfo(data)
@@ -59,14 +50,14 @@ class MainActivity : AppCompatActivity(), WeatherView, ClothesSuggesterView {
         }
     }
 
-    private fun onLoading() {
+    override fun onLoading() {
         runOnUiThread {
             binding.lottieLoadingWeather.show()
             binding.viewBackground.show()
         }
     }
 
-    private fun onFailure() {
+    override fun onFailure() {
         runOnUiThread {
             binding.viewBackground.show()
             binding.noInternetConnection.show()
