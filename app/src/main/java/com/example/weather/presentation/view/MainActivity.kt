@@ -21,7 +21,6 @@ import com.example.weather.presentation.util.extention.toCelsius
 import com.example.weather.presentation.util.extention.toPercent
 import java.util.*
 
-@RequiresApi(Build.VERSION_CODES.O)
 class MainActivity : AppCompatActivity(), WeatherView, ClothesSuggesterView {
 
     private val presenterWeather = WeatherPresenter(this)

@@ -11,7 +11,6 @@ import com.example.weather.presentation.util.extention.toCelsius
 import spleitDateTime
 import java.time.LocalDateTime
 
-@RequiresApi(Build.VERSION_CODES.O)
 class ClothesSuggesterPresenter(
     private val view: ClothesSuggesterView,
     private val context: Context
@@ -26,24 +25,19 @@ class ClothesSuggesterPresenter(
 
     fun checkClothesSuggester(data: MainWeather) {
         val clothesList = ClothesList().getList()
-        var flag = true
 
         if (getDay() != LocalDateTime.now().dayOfWeek.toString()) {
             val clothesSuggester = getClothesSuggesterIsWear(clothesList = clothesList, id= getIdImage())
-            if(flag){
-                setupDay()
-                setupIdImage(clothesSuggester.id)
-                flag = false
-            }
-
             view.getClothesSuggester(clothesSuggester)
+
+            setupDay()
+            setupIdImage(clothesSuggester.id)
         } else {
             val clothesSuggester = getClothesSuggesterRandom(clothesList= clothesList, data= data)
             view.getClothesSuggester(clothesSuggester)
             setupDay()
             setupIdImage(clothesSuggester.id)
         }
-
     }
 
 
@@ -51,7 +45,6 @@ class ClothesSuggesterPresenter(
         return preferences.clothesId ?:-1
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
     private fun getDay(): String {
         return preferences.day ?: ""
     }
@@ -60,7 +53,6 @@ class ClothesSuggesterPresenter(
         preferences.clothesId = id
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
     private fun setupDay() {
         preferences.day = LocalDateTime.now().plusDays(1).dayOfWeek.toString()
     }
